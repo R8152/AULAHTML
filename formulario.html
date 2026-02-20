@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando formulários</title>
+    <link rel="stylesheet" href="./styles/formulario.css">
+    <!-- <style>
+        h1{
+            color: darkcyan;
+        }
+        label{
+            display: block;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form>
+        <div>
+            <label class="block" for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+            <!-- required: Torna um input obrigatório
+                placeholder: Colocar uma mensagem na caixa do input -->
+        </div>
+        <div>
+            <label class="block" for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Digite seu email">
+        </div>
+        <div>
+            <label class="block" for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required placeholder="Digite sua senha">
+        </div>
+        <div>
+            <label class="block" for="nasc">Data de nascimento</label>
+            <input type="date" name="nasc" id="nasc">
+        </div>
+        <div><legend>Qual é sua matéria escolar favorita?</legend></div>
+        <div>
+            <input type="radio" name="materia" id="math">
+            <label for="">Matemática</label>
+        </div>
+        <div>
+            <input type="radio" name="materia" id="port">
+            <label for="">Português</label>
+        </div>
+        <div>
+            <input type="radio" name="materia" id="ing">
+            <label for="">Inglês</label>
+        </div>
+        <div>
+            <input type="radio" name="materia" id="hist">
+            <label for="">História</label>
+        </div>
+        <div>
+            <input type="radio" name="materia" id="geog">
+            <label for="">Geografia</label>
+        </div>
+        <div>
+            <input type="radio" name="materia" id="outro">
+            <label for="outro">Outro</label>
+            <div>
+                <label for="observacao">Em caso de outro, especifique:</label>
+                <textarea class="block" name="observacao" id="observacao" maxlength="10"></textarea> 
+                <!-- Cria uma caixa em branco digitar em caso de opção de outro -->
+            </div>
+        </div>
+        <div><legend>Qual é sua stack?</legend></div>
+        <div>
+            <input type="checkbox" name="stack" id="html">
+            <label for="html">HTML</label>
+        </div>
+        <div>
+            <input type="checkbox" name="stack" id="html">
+            <label for="css">CSS</label>
+        </div>
+        <div>
+            <input type="checkbox" name="stack" id="html">
+            <label for="js">JavaScript</label>
+        </div>
+    </form>
+
+    <button>Cadastrar</button>
+</body>
+</html>
