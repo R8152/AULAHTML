@@ -1,9 +1,51 @@
 h1{
-    color: darkblue;
+    color: rgb(0, 0, 249);
+    text-align: start;
+    margin-bottom: 10px;
 }
+body{
+    width: 50%;
+    background-color: rgb(251, 230, 114);
+    margin: auto;
+    padding: 20px;
+    place-items: center;
+}
+main{
+    width: 50%;
+    background-color: gold;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+/* Seletor de Classe */
 .block{
     display: block;
 }
-body{
-    background-color: mediumaquamarine;
+/* Seletor de ID */
+#nome, #email, #senha{
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: rgb(69, 64, 64);
+    color: white;
+}
+#nasc, textarea{
+    background-color: rgb(69, 64, 64);
+    color: white;
+}
+#nome:focus, #senha:focus, #email:focus, #nasc:
+.btn{
+    background-color: cadetblue;
+    padding: 5px 15px;
+    border-radius: 15px;
+    place-items: center;
+    width: 100%;
+}
+
+*{
+    margin: 0; /*Margem: Espaçamento Externo*/
+    padding: 0; /*Padding: Espaçamento Interno*/
+    border: 0;
+    outline: 0; /*Outline: Linha fora da borda*/
+    box-sizing: border-box; /* Serve para ele considere a borda como limite em relação ao tamanho da caixa*/
 }
